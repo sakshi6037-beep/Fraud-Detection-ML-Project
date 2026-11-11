@@ -1,0 +1,52 @@
+{
+    "model_name": "Random Forest Fraud Classifier",
+    "training_rows": 0,
+    "numeric_features": [
+        "amount",
+        "oldbalanceOrg",
+        "newbalanceOrig",
+        "oldbalanceDest",
+        "newbalanceDest",
+        "origin_error",
+        "dest_error"
+    ],
+    "categorical_features": [
+        "type"
+    ],
+    "features": [
+        "amount",
+        "oldbalanceOrg",
+        "newbalanceOrig",
+        "oldbalanceDest",
+        "newbalanceDest",
+        "origin_error",
+        "dest_error",
+        "type"
+    ],
+    "categories": {
+        "type": [
+            "CASH_IN",
+            "CASH_OUT",
+            "DEBIT",
+            "PAYMENT",
+            "TRANSFER"
+        ]
+    },
+    "numeric_defaults": {
+        "amount": 1000,
+        "oldbalanceOrg": 5000,
+        "newbalanceOrig": 4000,
+        "oldbalanceDest": 0,
+        "newbalanceDest": 1000,
+        "origin_error": 0,
+        "dest_error": 0
+    },
+    "default_threshold": 0.5,
+    "test_metrics": {
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.0
+    }
+}
